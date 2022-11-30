@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas grandes</title>
+</head>
+
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    table {
+        width: 500px;      ;
+        border-collapse: collapse;
+        position: relative;
+    }
+
+    tbody tr:nth-child(even) {
+        background-color: rgb(176, 192, 176);
+    }
+    caption {
+        background-color: rgb(184, 175, 175);
+        padding: 10px;
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+    th, td {
+        border: 1px solid black;    
+        padding: 10px;
+    }
+
+    thead, tfoot {
+        background-color: gray;
+        color: white;
+    }
+
+    thead > tr > th {
+        position: sticky;
+        top: -1px;
+        background-color: gray;
+    }
+
+    .numero{
+        text-align: right;
+    }
+
+</style>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        Anatomia para tabelas grandes
+           table
+               caption
+               thead
+                   tr, td, th
+               tbody
+                   tr, td, th
+               tfoot
+                   tr, td, th
+    -->
+
+    <table>
+        <caption>População das Unidades Federativas</caption>
+
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="numero">45 919 000</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="numero">21 160 000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="numero">17 264 000</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="numero">14 870 000</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="numero">11 433 000</td>
+            </tr> 
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="numero">11 377 000</td>
+            </tr>         
+            <tr>
+                <td>Pernambuco</td>
+                <td class="numero">9 557 000</td>            
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="numero">9 132 000</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="numero">8 602 000</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="numero">7 164 000</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="numero">7 075 000</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="numero">7 018 000</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="numero">4 144 000</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="numero">4 018 000</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="numero">3 506 000</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="numero">3 484 000</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="numero">3 337 000</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td class="numero">3 273 000</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="numero">3 015 000</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td class="numero">2 2770 000</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td class="numero">2 298 000</td>
+            </tr>
+            <tr>
+                <td>Rondônia</td>
+                <td class="numero">1 177 000</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td class="numero">1 572 000</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="numero">881 000</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td class="numero">845 000</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="numero">605 000</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="numero"><strong>210 145 000</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
